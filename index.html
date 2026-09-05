@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shaik Salma Samreen - Computer Science Engineer, Full Stack Developer, and Machine Learning Enthusiast. Portfolio showcasing projects, skills, education, and achievements." />
+  <meta name="keywords" content="Shaik Salma Samreen, Software Engineer, Portfolio, MERN Stack, Machine Learning, Python, Java, Web Development" />
+  <meta name="author" content="Shaik Salma Samreen" />
+  <title>Shaik Salma Samreen | Software Developer & CSE Student</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient background glow effect -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">SS</span>
+        <span class="logo-text">Salma<span>.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#activities" class="nav-link">Activities</a></li>
+          <li><a href="#contact" class="nav-link nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Light/Dark Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Download Button -->
+        <a href="sam .pdf" download="Shaik_Salma_Samreen_Resume.pdf" class="btn btn-outline btn-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Available for Internships & Software Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Shaik Salma Samreen</span>
+        </h1>
+
+        <div class="hero-role-wrapper">
+          <span class="role-prefix">I am a</span>
+          <span class="typewriter-text" id="typewriter"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          Computer Science Engineering undergraduate at Vignan University passionate about building scalable web applications, machine learning solutions, and innovative software systems that drive real-world impact.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Get in Touch</span>
+          </a>
+          <a href="sam .pdf" target="_blank" class="btn btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>View Resume PDF</span>
+          </a>
+        </div>
+
+        <div class="hero-quick-meta">
+          <div class="meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Andhra Pradesh, India</span>
+          </div>
+          <div class="meta-separator">•</div>
+          <div class="meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:salmasamreen1910@gmail.com" class="meta-link">salmasamreen1910@gmail.com</a>
+          </div>
+          <div class="meta-separator">•</div>
+          <div class="meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+918519871398" class="meta-link">+91 8519871398</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-header">
+            <div class="traffic-lights">
+              <span class="light red"></span>
+              <span class="light yellow"></span>
+              <span class="light green"></span>
+            </div>
+            <div class="code-tab-title">engineer_profile.py</div>
+          </div>
+          <div class="code-body">
+            <pre><code><span class="code-keyword">class</span> <span class="code-class">SoftwareEngineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-str">"Shaik Salma Samreen"</span>
+        <span class="code-param">self</span>.degree = <span class="code-str">"B.Tech Computer Science"</span>
+        <span class="code-param">self</span>.institution = <span class="code-str">"Vignan University"</span>
+        <span class="code-param">self</span>.grad_year = <span class="code-num">2026</span>
+        <span class="code-param">self</span>.languages = [<span class="code-str">"Python"</span>, <span class="code-str">"Java"</span>, <span class="code-str">"C"</span>]
+        <span class="code-param">self</span>.domains = [<span class="code-str">"Full-Stack MERN"</span>, <span class="code-str">"Machine Learning"</span>]
+        <span class="code-param">self</span>.passionate = <span class="code-bool">True</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">build_solution</span>(<span class="code-param">self</span>, <span class="code-param">problem</span>):
+        <span class="code-keyword">return</span> f<span class="code-str">"Delivering innovative, efficient code for {problem}!"</span></code></pre>
+          </div>
+          <div class="code-badge-bar">
+            <span class="code-tag">⚡ Python</span>
+            <span class="code-tag">☕ Java</span>
+            <span class="code-tag">⚛️ React & MERN</span>
+            <span class="code-tag">🤖 ML Stacking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-badge">Career Objective & Background</div>
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">A blend of analytical mindset, strong engineering fundamentals, and collaborative leadership.</p>
+
+      <div class="about-grid">
+        <div class="about-card primary-card">
+          <div class="about-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 14 14"></polygon></svg>
+          </div>
+          <h3>Professional Objective</h3>
+          <p>
+            Seeking a challenging role to apply my skills in <strong>C, Python, and Java</strong> for building efficient, scalable, and innovative software solutions that drive organizational growth. Driven by solving complex challenges through structured code, continuous learning, and cross-functional teamwork.
+          </p>
+          <div class="quote-box">
+            "Committed to transforming technical requirements into robust user-centric architectures and intelligent data models."
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <h3>Academic Journey</h3>
+          <p>
+            Currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong> at <strong>Vignan University</strong> (2022–2026) with a CGPA of <strong>7.3</strong>. Built a solid foundation in algorithms, software design patterns, full-stack development, and applied artificial intelligence.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3>Leadership & Adaptability</h3>
+          <p>
+            Awarded the prestigious <strong>Elite Badge in Leadership Team Effectiveness</strong> by NPTEL. Demonstrated event management excellence as <strong>Registrations Coordinator for Mahotsav</strong> and represented tech innovation at <strong>Srujanankura Project Expo</strong>.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3>Multilingual Communication</h3>
+          <p>
+            Certified with <strong>Cambridge B1 Preliminary English (PET)</strong> proficiency. Fluent in 4 languages facilitating seamless collaboration across diverse cultural and geographic teams:
+          </p>
+          <div class="lang-pills">
+            <span class="lang-pill">English (B1 Certified)</span>
+            <span class="lang-pill">Telugu (Native)</span>
+            <span class="lang-pill">Hindi (Fluent)</span>
+            <span class="lang-pill">Urdu (Fluent)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section alt-bg" id="skills">
+    <div class="container">
+      <div class="section-badge">Core Competencies</div>
+      <h2 class="section-title">Technical & Professional Skills</h2>
+      <p class="section-subtitle">A balanced toolkit spanning backend engineering, modern web technologies, machine learning, and team leadership.</p>
+
+      <div class="skills-category-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon cat-purple">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h4>Programming Languages</h4>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Advanced (Cisco Certified)</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Proficient (OOP & Data Structures)</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">C</span>
+                <span class="skill-level">Strong Foundation</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web & Full Stack -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon cat-cyan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h4>Web & Full Stack</h4>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MERN Stack (MongoDB, Express, React, Node)</span>
+                <span class="skill-level">Job Connect Hub Architecture</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 & Web Basics</span>
+                <span class="skill-level">Semantic Markup & Responsive UI</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">RESTful APIs & Authentication</span>
+                <span class="skill-level">Secure Tokens, JWT, Endpoints</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 78%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Applied Machine Learning -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon cat-emerald">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h4>Machine Learning & AI</h4>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Ensemble Learning & Stacking</span>
+                <span class="skill-level">Posture & Pose Classification</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Model Evaluation & Feature Prep</span>
+                <span class="skill-level">Metrics, Cross-Validation</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Computer Vision / Human Posture</span>
+                <span class="skill-level">Pose landmark feature mapping</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core CS, Security & Soft Skills -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="cat-icon cat-amber">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4>Networking & Interpersonal</h4>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Leadership & Team Effectiveness</span>
+                <span class="skill-level">NPTEL Elite Badge Certified</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Networking Fundamentals & Cybersecurity</span>
+                <span class="skill-level">NPTEL Certified</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Time Management & Adaptability</span>
+                <span class="skill-level">Event Leadership & Project Expos</span>
+              </div>
+              <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-badge">Portfolio Highlights</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Real-world applications built with modern web architecture and cutting-edge machine learning.</p>
+
+      <!-- Project Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects (2)</button>
+        <button class="filter-btn" data-filter="fullstack">Web / MERN Stack</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning / AI</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Job Connect Hub -->
+        <article class="project-card" data-category="fullstack">
+          <div class="project-header">
+            <div class="project-badge mern-badge">Full-Stack MERN</div>
+            <div class="project-links">
+              <button class="project-info-btn" data-modal="job-connect" title="View Full Details">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-image-preview job-connect-img">
+            <div class="preview-overlay">
+              <span class="preview-tag">MERN Architecture</span>
+              <h4>Job Connect Hub</h4>
+              <p>Bridging Job Seekers with Recruiters</p>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Job Connect Hub</h3>
+            <p class="project-desc">
+              A robust MERN stack-based platform that connects job seekers with recruiters through a seamless interface for posting and applying to jobs. Engineered with real-time application updates, secure authentication, and an intuitive dashboard.
+            </p>
+
+            <div class="project-features-list">
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dual-portal interface for Candidates and Recruiters</span>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Secure JWT authentication & role-based dashboard access</span>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Real-time status updates and instant job filtering</span>
+              </div>
+            </div>
+
+            <div class="tech-stack-tags">
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">JWT Auth</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-outline btn-sm w-full" data-modal="job-connect">
+                <span>View Architecture & Case Study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Ensemble-Aided Yoga Pose Classification -->
+        <article class="project-card" data-category="ml">
+          <div class="project-header">
+            <div class="project-badge ml-badge">Machine Learning & AI</div>
+            <div class="project-links">
+              <button class="project-info-btn" data-modal="yoga-pose" title="View Full Details">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-image-preview yoga-pose-img">
+            <div class="preview-overlay">
+              <span class="preview-tag">Stacking Ensemble</span>
+              <h4>Yoga Pose Classification</h4>
+              <p>Posture Estimation & AI Wellness</p>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Ensemble-Aided Yoga Pose Classification</h3>
+            <p class="project-desc">
+              A stacking-based machine learning approach combining multiple predictive models for accurate human posture recognition. Enhances classification accuracy, ensuring reliable identification of yoga poses for digital fitness and wellness applications.
+            </p>
+
+            <div class="project-features-list">
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Stacking ensemble meta-learner combining multiple base classifiers</span>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Accurate posture landmark extraction & geometric angle features</span>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Higher noise tolerance across varied camera perspectives and body types</span>
+              </div>
+            </div>
+
+            <div class="tech-stack-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Stacking Ensemble</span>
+              <span class="tech-tag">Posture Recognition</span>
+              <span class="tech-tag">Scikit-Learn</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-outline btn-sm w-full" data-modal="yoga-pose">
+                <span>View ML Architecture & Methodology</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline Section -->
+  <section class="section alt-bg" id="education">
+    <div class="container">
+      <div class="section-badge">Academic Milestones</div>
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">Consistent academic dedication from secondary school to university level.</p>
+
+      <div class="timeline">
+        <!-- University -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period">2022 – 2026</span>
+              <span class="timeline-badge">Current Undergraduate</span>
+            </div>
+            <h3 class="timeline-title">B.Tech in Computer Science Engineering</h3>
+            <h4 class="timeline-institution">Vignan University, Andhra Pradesh</h4>
+            <div class="timeline-score">
+              <span class="score-label">Cumulative GPA:</span>
+              <span class="score-value">7.3 / 10.0</span>
+            </div>
+            <p class="timeline-desc">
+              Focusing on core computer science fundamentals including Data Structures & Algorithms, Object-Oriented Programming (Java, Python, C), Database Management Systems, Web Technologies, Computer Networks, and Machine Learning.
+            </p>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period">2020 – 2022</span>
+              <span class="timeline-badge">Higher Secondary</span>
+            </div>
+            <h3 class="timeline-title">Intermediate (MPC - Mathematics, Physics, Chemistry)</h3>
+            <h4 class="timeline-institution">NRI Junior College</h4>
+            <div class="timeline-score">
+              <span class="score-label">Cumulative GPA:</span>
+              <span class="score-value">7.9 / 10.0</span>
+            </div>
+            <p class="timeline-desc">
+              Rigorous analytical training in calculus, physical sciences, logical problem solving, and quantitative analysis.
+            </p>
+          </div>
+        </div>
+
+        <!-- SSC -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period">2019 – 2020</span>
+              <span class="timeline-badge">High School</span>
+            </div>
+            <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+            <h4 class="timeline-institution">British English Medium School</h4>
+            <div class="timeline-score">
+              <span class="score-label">Cumulative GPA:</span>
+              <span class="score-value highlight">8.6 / 10.0</span>
+            </div>
+            <p class="timeline-desc">
+              Graduated with top academic standing with distinction across core science and mathematics curriculums.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-badge">Credentials & Recognitions</div>
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-subtitle">Industry and academic credentials validating technical knowledge and interpersonal leadership.</p>
+
+      <div class="cert-grid">
+        <!-- Cert 1: Leadership Elite Badge -->
+        <div class="cert-card featured-cert">
+          <div class="cert-badge-ribbon">⭐ Elite Badge</div>
+          <div class="cert-icon-wrapper cert-gold">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">NPTEL</span>
+            <h3 class="cert-title">Leadership Team Effectiveness</h3>
+            <p class="cert-desc">
+              Awarded with prestigious <strong>Elite Badge</strong> distinction. Validates organizational communication, conflict resolution, collaborative synergy, and high-performance team leadership.
+            </p>
+            <div class="cert-meta-tag">NPTEL Certified • Elite Honor</div>
+          </div>
+        </div>
+
+        <!-- Cert 2: Cisco Python Essentials -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper cert-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 3.07V3a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 9H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z"></path></svg>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Cisco Networking Academy</span>
+            <h3 class="cert-title">Python Essentials</h3>
+            <p class="cert-desc">
+              Comprehensive certification covering procedural programming, object-oriented concepts, algorithm design, standard libraries, and real-world script automation.
+            </p>
+            <div class="cert-meta-tag">Cisco Academy Certified</div>
+          </div>
+        </div>
+
+        <!-- Cert 3: Cambridge PET B1 English -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper cert-purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Cambridge University</span>
+            <h3 class="cert-title">B1 Level English Proficiency (PET)</h3>
+            <p class="cert-desc">
+              Cleared the prestigious Preliminary English Test (PET) administered by Cambridge University, certifying professional workplace English communication, writing, and speaking skills.
+            </p>
+            <div class="cert-meta-tag">Cambridge English Assessment</div>
+          </div>
+        </div>
+
+        <!-- Cert 4: Networking & Cybersecurity -->
+        <div class="cert-card">
+          <div class="cert-icon-wrapper cert-teal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">NPTEL</span>
+            <h3 class="cert-title">Fundamentals of Networking & Cybersecurity</h3>
+            <p class="cert-desc">
+              Strong grounding in OSI/TCP-IP networking architecture, IP addressing, routing protocols, threat identification, cryptographic primitives, and secure communications.
+            </p>
+            <div class="cert-meta-tag">NPTEL Technical Certification</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra-Curricular Activities Section -->
+  <section class="section alt-bg" id="activities">
+    <div class="container">
+      <div class="section-badge">Leadership & Community</div>
+      <h2 class="section-title">Extra-Curricular Activities</h2>
+      <p class="section-subtitle">Hands-on event coordination, technical project exhibitions, and organizational impact.</p>
+
+      <div class="activities-grid">
+        <div class="activity-card">
+          <div class="activity-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <div class="activity-details">
+            <span class="activity-role">Co-ordinator</span>
+            <h3 class="activity-title">Registrations Vertical — Mahotsav Event</h3>
+            <p class="activity-desc">
+              Served as Lead Coordinator for the student registrations vertical at the university's annual flagship fest Mahotsav. Spearheaded attendee intake workflows, handled logistical coordination across teams, and ensured frictionless onboarding for thousands of participants.
+            </p>
+            <div class="activity-tags">
+              <span>Event Operations</span>
+              <span>Team Leadership</span>
+              <span>People Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <div class="activity-details">
+            <span class="activity-role">Project Presenter</span>
+            <h3 class="activity-title">Technical Fest Srujanankura — Project Expo</h3>
+            <p class="activity-desc">
+              Selected to demonstrate an innovative engineering project at the prestigious Project Expo during Srujanankura National Technical Fest. Articulated architectural choices, system design, and implementation trade-offs to visiting panels and tech evaluators.
+            </p>
+            <div class="activity-tags">
+              <span>Technical Presentation</span>
+              <span>System Design</span>
+              <span>Innovation Showcase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-badge">Let's Connect</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Interested in working together or discussing potential opportunities? Feel free to reach out!</p>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info Cards -->
+        <div class="contact-info-panel">
+          <div class="contact-panel-card">
+            <div class="contact-panel-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-panel-body">
+              <span class="contact-label">Email</span>
+              <a href="mailto:salmasamreen1910@gmail.com" class="contact-value">salmasamreen1910@gmail.com</a>
+              <button class="copy-btn" data-copy="salmasamreen1910@gmail.com" title="Copy email address">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-panel-card">
+            <div class="contact-panel-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-panel-body">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+918519871398" class="contact-value">+91 8519871398</a>
+              <button class="copy-btn" data-copy="+918519871398" title="Copy phone number">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-panel-card">
+            <div class="contact-panel-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-panel-body">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Andhra Pradesh, India</span>
+            </div>
+          </div>
+
+          <div class="social-links-block">
+            <h4>Professional Profiles</h4>
+            <div class="social-buttons">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="sam .pdf" target="_blank" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>Resume PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-container">
+          <form class="contact-form" id="contact-form">
+            <h3 class="form-title">Send a Direct Message</h3>
+            
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Recruiter / Collaborator" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email Address</label>
+              <input type="email" id="email" name="email" placeholder="e.g. hiring@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Role Opportunity / Project Inquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Hello Salma, I'd like to discuss an opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-full">
+              <span>Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            <p class="form-disclaimer">Messages open directly in your mail client or can be copied easily.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo-badge">SS</span>
+        <span class="footer-name">Shaik Salma Samreen</span>
+        <p class="footer-tagline">Computer Science Engineer • Full-Stack Developer • ML Enthusiast</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="sam .pdf" target="_blank">Resume</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Shaik Salma Samreen. Built with passion & clean code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modal-content">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
